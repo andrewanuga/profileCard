@@ -53,9 +53,9 @@ themeToggleBtn.addEventListener('click', function() {
     <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
     <link rel="stylesheet" href="./styles.css" />
 </head>
-  <body class="h-full w-full">
-    <div class="gallery w-dvw h-dvh bg-[#ffffff] dark:bg-[#201f24] gap-1 flex justify-center items-center">
-        <div class="cardbox w-[400px] h-[600px] z-30 rounded-2xl bg-[#323232]">
+  <body class="h-full w-full justify-center items-center">
+    <div class="container w-dvw h-dvh gap-1 flex justify-center items-center">
+        <div class="cardbox w-[400px] h-[600px] z-30 rounded-2xl bg-[#121212]">
             <div class="bg-img w-full h-[50%] rounded-2xl">
                 <div class="w-auto h-auto flex justify-between items-center">
                     <div class="w-20 h-auto saturate-200 p-5 flex relative top-2 left-1 justify-center gap-1 items-center">
@@ -72,8 +72,6 @@ themeToggleBtn.addEventListener('click', function() {
                 </div>
                 <img class="w-24 h-24 object-cover rounded-full relative top-56 border-[3px] border-[gray] shadow shadow-indigo-600 left-[37%] z-30" src="./src/avatar.jpg" alt="avatar" />
             </div>
-            <div class="absolute top-[60%] left-[30%] w-20 h-20 bg-violet-700 rounded-full"></div>
-            <div class="absolute top-[60%] left-[60%] w-20 h-20 bg-amber-700 rounded-full"></div>
             <div class="backdrop w-full h-[50%] rounded-2xl">
                 <div class="flex justify-center items-center flex-wrap relative top-12">
                     <h1 class="text-white font-bold text-lg w-full flex justify-center items-center">ANDREW ADAKOLE</h1>
@@ -129,7 +127,7 @@ themeToggleBtn.addEventListener('click', function() {
     typewriter.textContent = '';
 
     let i = 0;
-    const typingInterval = 100; // Adjust typing speed (milliseconds)
+    const typingInterval = 50; // Adjust typing speed (milliseconds)
 
     const type = () => {
       if (i < text.length) {
