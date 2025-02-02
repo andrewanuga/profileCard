@@ -40,3 +40,10 @@ themeToggleBtn.addEventListener('click', function() {
 });
 
 
+const time= document.querySelector('.time')
+const now = new Date();
+const utcHours = now.getUTCHours();
+const utcMinutes = now.getUTCMinutes();
+const utcSeconds = now.getUTCSeconds();
+
+time.innerText=(`${utcHours}:${utcMinutes}:${utcSeconds}`);
